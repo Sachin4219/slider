@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Image Slider</title>
+	<link rel="stylesheet" type="text/css" href="./css/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<nav>
+		<div class = "container">
+			<div class="nav-header">
+				<div class ="brand">
+					<span class="logo"></span>
+					<span style="color:#49A6E9">NSS NSUT</span>
+				</div>
+				<div id="dropButton">
+					<i class="fa-solid fa-bars"></i>
+				</div>
+			</div>
+				<div class ="sitelinks">
+					<a class="active" >Home</a>
+					<a>About</a>
+					<a>Gallery</a>
+					<a>Contact</a>
+				</div>
+				<div class ="socials">
+					<a href="https://www.facebook.com/nssnsutcell/">
+						<i class="fa-brands fa-facebook-square"></i>
+					</a>
+					<a href="https://www.linkedin.com/company/nss-nsut-delhi/">
+						<i class="fa-brands fa-linkedin"></i>
+					</a>
+					<a href="https://www.instagram.com/nssnsutcell/">
+						<i class="fa-brands fa-instagram-square"></i>
+					</a>
+					<a href="https://twitter.com/nssnsutcell">
+						<i class="fa-brands fa-twitter-square"></i>
+					</a>
+				</div>
+		</div>
+	    <div class="dropdown">
+			<div class ="sitelinks">
+				<a>Home</a>
+				<a>About</a>
+				<a>Projects</a>
+				<a>Contact</a>
+			</div>
+		</div>
+	</nav>
+
+
+	<div class="main">
+		<h2>Events Gallery</h2>
+
+		<div class="image-slider">
+			<h2 class="title">
+				National Integration Camp
+			</h2>
+			<div class="thumbnail">
+				<img src="https://images.unsplash.com/photo-1654444421865-dc4114462e6d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt="Sorry for inconvenience">
+			</div>
+			<div class="caption">
+				<h3>
+				</h3>
+				<div class="btn">Read more</div>
+			</div>
+			<a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+			<a class="next" onclick="changeSlide(1)">&#10095;</a>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="./javascript/app.js"></script>
+</html>
