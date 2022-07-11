@@ -1,1 +1,1 @@
-# Slider click to [`view`](https://sachin4219.github.io/Wordle/)
+# Slider click to [`view`](https://sachin4219.github.io/slider/)
