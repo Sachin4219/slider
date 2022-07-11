@@ -7,18 +7,20 @@ body{
 }
 nav{
 	margin: 0;
-	width: 100vw;
+	width: 100%;
 	min-height: 8.5vh;
-	height: auto;
+	height: fit-content;
 	box-shadow: 0 8px 15px #DDD;
 	background-color: white;
+	box-sizing: border-box;
+	padding: 18px;
 }
 
 .container{
+	box-sizing: border-box;
 	width: 68vw;
 	margin: 0 auto;
 	height: 40px;
-	padding: 18px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -63,20 +65,17 @@ nav{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
 	display: flex;
+	box-sizing: border-box;
 }
 
 .sitelinks a{
+	height: fit-content;
 	width: fit-content;
 	margin: 0 3.5% 0 0;
 	padding: 0;
 	cursor: pointer;
 }
-/*.active{
-	border-bottom: 2px solid black;
-}
-a:hover{
-	transform: translate(0, 3px) scale(1.1) ;
-}*/
+
 .socials{
 	width: fit-content;
 	display: flex;
@@ -98,6 +97,7 @@ a:hover{
 	display: none;
 	transition: 0.6s;
 	cursor: pointer;
+	width: fit-content;
 }
 #dropButton:hover{
 	transform: rotate(90deg);
@@ -295,6 +295,7 @@ a:hover{
 	nav{
 		min-height: 8.5vh;
 		height: auto;
+		padding: 10px 0;
 	}
 
 	.container{
@@ -322,6 +323,11 @@ a:hover{
 		display: flex;
 		flex-direction: column;
 		padding: 0;
+	}
+	.dropdown .sitelinks a{
+		height: fit-content;
+		box-sizing: border-box;
+		margin: 0;
 	}
 	.image-slider{
 		width: 100%;
