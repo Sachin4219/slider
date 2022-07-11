@@ -3,7 +3,7 @@ const btn 		= document.querySelector('#dropButton');
 const sitelinks = document.querySelectorAll('.sitelinks a');
 const dropdown  = document.querySelector('.dropdown');
 const socials   = document.querySelectorAll('.socials i');
-const thumbnail = document.querySelector('.thumbnail img');
+const thumbnail = document.querySelector('.thumbnail');
 const imageDescription = document.querySelector('.caption h3');
 
 
@@ -14,6 +14,7 @@ const images = [
 			"https://images.unsplash.com/photo-1657037027027-6cca94dcc4a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0MXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
 			"https://images.unsplash.com/photo-1657073895095-b050616ab369?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1MXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
 ];
+
 const descriptions = [
 				"A beautiful day in xianxiou china, rain fed grasslands, ancient culture, scenic mountains",
 				"Bird eye view of glorious omaha at night time, a vision to reminisce forever",
@@ -38,12 +39,6 @@ btn.addEventListener('click', function(){
 	}
 });
 
-// sitelinks.forEach((elem) => {
-// 	elem.addEventListener('click', function(){
-// 		elem.classList.add("active");
-// 	})
-// })
-
 function changeSlide(i){
 	index = (index + i);
 
@@ -52,12 +47,14 @@ function changeSlide(i){
 
 	if(index < 0)
 		index = 4;
+	thumbnail.style.opacity=0;
+	thumbnail.style.backgroundImage = `url(${images[index]})`;
+	thumbnail.style.opacity=1;
 
-	thumbnail.src = images[index];
 	imageDescription.innerText = descriptions[index]
 
 }
-// setInterval(changeSlide, 2000);
+setInterval(() => changeSlide(1), 3500);
 
 
 
